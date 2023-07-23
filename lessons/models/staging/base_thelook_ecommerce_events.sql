@@ -3,8 +3,7 @@ with source as (
 ),
 renamed as (
     select
-        
-
+        *
     from source
 )
 select * from renamed
