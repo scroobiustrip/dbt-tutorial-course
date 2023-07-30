@@ -1,0 +1,13 @@
+lessons: # this needs to match the profile: in your dbt_project.yml file
+  target: production 
+  outputs:
+    production:
+      dataset: dbt_production
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      method: oauth
+      priority: interactive
+      project: autocar-review-gsc
+      threads: 60
+      type: bigquery
